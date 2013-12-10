@@ -1,0 +1,25 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: Yanez
+ * Date: 10/12/2013
+ * Time: 06:58 a.m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace DefaultNamespace
+{
+	
+	public class Class1
+	{
+		public int Codigo;
+                public String Nombre;
+                public String Telefono;
+                public String Facebook;
+		
+                public Class1()
+		{
+		}
+	}
+}
