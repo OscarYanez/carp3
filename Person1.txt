@@ -1,0 +1,61 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: Yanez
+ * Date: 10/12/2013
+ * Time: 07:00 a.m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+using System.Collections
+
+	namespace date
+{
+	
+	 class Class2
+	{
+		public static void Main(string[] args)
+                {
+                        Hashtable tabla=new Hashtable();
+                        
+                        for(int n=1;n<=2;n++){
+                        
+                        Persona p=new Persona();
+                        
+                        Console.WriteLine("Code");
+                        p.Codigo=int.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("Write the name");
+                        p.Nombre=Console.ReadLine();
+                        
+                        Console.WriteLine("Write the phone");
+                        p.Telefono=Console.ReadLine();
+                        
+                        Console.WriteLine("Write the Face");
+                        p.Facebook=Console.ReadLine();
+                        
+                        
+                        tabla.Add(p.Codigo,p);
+                        }
+                        
+                        Console.WriteLine("Code");
+                        int Codigo=int.Parse(Console.ReadLine());
+                        
+                        Persona editar=(Persona)(tabla[Codigo]);
+                        
+                        Console.WriteLine("Edite los cambios");
+                        Console.WriteLine("Edite el Nombre cambiado");
+                        editar.Nombre=Console.ReadLine();
+                        
+                        Console.WriteLine("Edite el Telefono cambiado");
+                        editar.Telefono=Console.ReadLine();
+                        
+                        Console.WriteLine("Edite el Facebook cambiado");
+                        editar.Facebook=Console.ReadLine();
+                        
+                        
+                        Console.Write("Press any key to continue . . . ");
+                        Console.ReadKey(true);
+                }
+        }
+}
